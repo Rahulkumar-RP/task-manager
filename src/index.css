@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #202938;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 24px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 45px;
+}
+
+.app-label {
+  color: #6576d9;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.app-header h1 {
+  margin: 8px 0;
+  font-size: 36px;
+}
+
+.subtitle {
+  color: #778195;
+  margin: 0;
+}
+
+.task-counter {
+  background: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 3px 15px #00000008;
+}
+
+.task-counter strong {
+  font-size: 28px;
+  color: #5668d8;
+}
+
+.task-counter span {
+  color: #778195;
+  font-size: 13px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  font-size: 21px;
+}
+
+.section-heading span {
+  color: #778195;
+  font-size: 14px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.task-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 3px 15px #00000008;
+}
+
+.task-card input {
+  width: 18px;
+  height: 18px;
+  accent-color: #5668d8;
+}
+
+.task-card input:disabled {
+  cursor: default;
+}
+
+.task-details {
+  flex: 1;
+}
+
+.task-details h3 {
+  margin: 0 0 7px;
+  font-size: 16px;
+}
+
+.task-details p {
+  margin: 0;
+  font-size: 13px;
+  color: #8490a2;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #929baa;
+}
+
+.priority {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.high {
+  background: #ffe6e6;
+  color: #d94343;
+}
+
+.medium {
+  background: #fff3d8;
+  color: #a87511;
+}
+
+.low {
+  background: #e3f5e9;
+  color: #25834a;
+}
+
+.message,
+.error-message {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.error-message {
+  color: #d94343;
+}
+
+.error-message button {
+  background: #5668d8;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 28px 16px;
+  }
+
+  .app-header {
+    align-items: flex-start;
+  }
+
+  .app-header h1 {
+    font-size: 27px;
+  }
+
+  .task-counter {
+    padding: 12px;
+  }
+
+  .task-card {
+    padding: 15px 12px;
+    gap: 10px;
+  }
+
+  .task-card .priority {
+    padding: 5px 8px;
+  }
+
+  .task-details h3 {
+    font-size: 14px;
+  }
+}
